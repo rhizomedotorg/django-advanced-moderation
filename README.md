@@ -1,4 +1,4 @@
-django-amt
+django-advanced-moderation
 ==========
 
-Advanced moderation tool
+Advanced moderation tools for Django

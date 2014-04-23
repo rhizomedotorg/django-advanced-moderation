@@ -2,8 +2,8 @@ from django.contrib import admin
 from django.contrib.contenttypes.models import ContentType
 from django.template.loader import render_to_string
 
-from moderation.models import QueuedInstance
-from moderation.utils import moderator
+from models import QueuedInstance
+from utils import moderator
 
 
 class QueuedInstanceProxy(QueuedInstance):

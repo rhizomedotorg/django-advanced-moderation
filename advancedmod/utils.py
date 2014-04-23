@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.contrib.contenttypes.models import ContentType
 from django.db.models.base import ModelBase
 
-from moderation.models import QueuedInstance
+from models import QueuedInstance
 
 
 class Moderator(object):

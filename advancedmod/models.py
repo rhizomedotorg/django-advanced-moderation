@@ -3,7 +3,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.db import models
 from django.db.models.signals import pre_delete
 
-import moderation.utils
+import utils
 
 
 class QueuedInstance(models.Model):

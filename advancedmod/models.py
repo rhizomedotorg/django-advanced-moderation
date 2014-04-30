@@ -3,7 +3,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.db import models
 from django.db.models.signals import pre_delete
 
-import utils
+from utils import moderator
 
 
 class QueuedInstance(models.Model):
@@ -17,7 +17,7 @@ class QueuedInstance(models.Model):
         ordering = ['-created']
 
     def moderation_instance(self):
-        return moderation.utils.moderator._registry.get(self.content_type.model_class())
+        return moderator._registry.get(self.content_type.model_class())
 
     def moderate(self, request, fail=False):
         moderation_instance = self.moderation_instance()

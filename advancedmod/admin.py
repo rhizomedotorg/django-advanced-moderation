@@ -61,5 +61,4 @@ class ModelModeratorAdmin(admin.ModelAdmin):
     rendered_info.allow_tags = True
     rendered_info.short_description = ''
 
-# admin.site.register(QueuedInstance)
 admin.site.register(QueuedInstanceProxy, ModelModeratorAdmin)

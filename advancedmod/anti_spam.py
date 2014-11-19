@@ -1,39 +1,6 @@
 import re
-
-#from defensio import Defensio
 from django.conf import settings
 
-
-# defensio_call = Defensio(settings.DEFENSIO_API_KEY)
-
-# def check_post_for_spam_via_defensio(text_to_check):
-#     # api call to defensio
-#     doc = {
-#         'content': text_to_check, 
-#         'type': 'comment', 
-#         'platform': 'custom'
-#     }
-
-#     try:     
-#         status, result = defensio_call.post_document(doc)
-
-#         signature = result['defensio-result']['signature']
-
-#         status, put_result = defensio_call.put_document(signature, {'allow': 'false'})
-#         put_result_body = put_result['defensio-result']
-
-#         status, get_result = defensio_call.get_document(signature)
-
-#         #print '+++++++++++++++++++++'
-#         #print get_result["defensio-result"]["spaminess"]
-#         #print '+++++++++++++++++++++'
-
-#         if get_result['defensio-result']['spaminess'] >= settings.DEFENSIO_SPAMINESS_CUTOFF_RATING:
-#             return True
-#     except:
-#         pass
-
-#     return False
 
 SPAM_TLDS = ('pl',)
 
